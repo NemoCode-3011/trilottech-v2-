@@ -55,7 +55,7 @@ const routeMetadata: Record<string, { title: string; description: string }> = {
       "Distinctive websites and digital products that help ambitious businesses earn attention, trust, and enquiries.",
   },
   "/about": {
-    title: "About Trilot | Digital work with purpose",
+    title: "About Trilot | Digital projects with purpose",
     description:
       "Meet Trilot, a strategy, design, and development partner for businesses ready to move forward.",
   },

@@ -24,8 +24,8 @@ export const trustPoints = [
     number: "03",
     title: "Practical digital tools",
     description:
-      "We build around how the business works, so the final product is useful beyond the launch moment.",
-    shortDescription: "Useful systems for the work behind the business.",
+      "We build around how the business operates, so the final product is useful beyond the launch moment.",
+    shortDescription: "Useful systems for the processes behind the business.",
   },
   {
     number: "04",

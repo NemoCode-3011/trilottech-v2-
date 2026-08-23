@@ -31,14 +31,15 @@ export const projects: Project[] = [
       "The experience uses an editorial visual direction, deliberate type hierarchy, and an image-led layout to create a sense of pace and occasion. Navigation and calls to action remain simple so visual atmosphere does not get in the way of practical decisions.",
     outcome:
       "A focused hospitality website concept that balances visual character with a clear path toward exploring the menu, finding key details, and making a reservation.",
-    services: ["Strategy", "UX direction", "Visual design", "Frontend development"],
+    services: [
+      "Strategy",
+      "UX direction",
+      "Visual design",
+      "Frontend development",
+    ],
     stack: ["React", "TypeScript", "Tailwind CSS"],
     heroImage: "/assets/orita.png",
-    gallery: [
-      "/assets/orita2.png",
-      "/assets/orita3.png",
-      "/assets/orita4.png",
-    ],
+    gallery: ["/assets/orita2.png", "/assets/orita3.png", "/assets/orita4.png"],
     githubUrl: "https://github.com/NemoCode-3011/Orita-fine-dining",
   },
   {
@@ -55,7 +56,12 @@ export const projects: Project[] = [
       "The site uses a calm visual system, spacious layouts, and an information hierarchy that gives listings and property details room to breathe. Important actions remain visible throughout the experience, while content is organised around the questions a buyer is likely to have.",
     outcome:
       "A property website concept that demonstrates a clearer, more considered route from discovering a home to making an enquiry.",
-    services: ["Information architecture", "UX design", "UI design", "Frontend development"],
+    services: [
+      "Information architecture",
+      "UX design",
+      "UI design",
+      "Frontend development",
+    ],
     stack: ["React", "TypeScript", "Tailwind CSS"],
     heroImage: "/assets/arcadia.png",
     gallery: [
@@ -72,21 +78,22 @@ export const projects: Project[] = [
     industry: "Construction",
     label: "Independent build",
     summary:
-      "A construction website built to communicate capability, trust, and the quality behind the work.",
+      "A construction website built to communicate capability, trust, and the quality behind the project.",
     brief:
       "Construction businesses need a digital presence that makes their expertise feel tangible. This project explored how to communicate services, quality, and confidence without relying on generic trade-business patterns.",
     approach:
-      "The design uses a structured layout, confident typography, and a direct content hierarchy. The experience focuses on helping a visitor understand what the company does, see the standard of work, and take a practical next step.",
+      "The design uses a structured layout, confident typography, and a direct content hierarchy. The experience focuses on helping a visitor understand what the company does, see the standard of the project, and take a practical next step.",
     outcome:
       "A construction website concept with a stronger sense of craft, capability, and trust than a standard brochure-style site.",
-    services: ["Content structure", "UX direction", "Visual design", "Frontend development"],
+    services: [
+      "Content structure",
+      "UX direction",
+      "Visual design",
+      "Frontend development",
+    ],
     stack: ["React", "TypeScript", "Tailwind CSS"],
     heroImage: "/assets/knostandco.png",
-    gallery: [
-      "/assets/knost2.png",
-      "/assets/knost3.png",
-      "/assets/knost4.png",
-    ],
+    gallery: ["/assets/knost2.png", "/assets/knost3.png", "/assets/knost4.png"],
     githubUrl: "https://github.com/NemoCode-3011/knost-and-co",
   },
   {
@@ -103,7 +110,12 @@ export const projects: Project[] = [
       "The design uses stronger contrast, expressive typography, and a clear content order to bring energy to the brand. Key details are made easy to scan so visitors can quickly understand the offer and decide to book.",
     outcome:
       "A distinctive local-business website concept that combines personality with a simple appointment-focused journey.",
-    services: ["Brand expression", "UX design", "UI design", "Frontend development"],
+    services: [
+      "Brand expression",
+      "UX design",
+      "UI design",
+      "Frontend development",
+    ],
     stack: ["React", "TypeScript", "Tailwind CSS"],
     heroImage: "/assets/dprimeimg.png",
     gallery: [

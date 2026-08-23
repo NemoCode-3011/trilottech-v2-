@@ -11,7 +11,7 @@ const easeOut = [0.22, 1, 0.36, 1] as const;
 
 const NAV_LINKS: NavLink[] = [
   { label: "Home", href: "/#home" },
-  { label: "Portfolio", href: "/#work" },
+  { label: "Projects", href: "/#projects" },
   { label: "Services", href: "/#services" },
   { label: "About", href: "/#about" },
   { label: "Contact", href: "/#contact" },

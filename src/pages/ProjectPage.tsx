@@ -70,10 +70,10 @@ function NotFoundProject() {
         </h1>
 
         <Link
-          to="/#work"
+          to="/#projects"
           className="mt-10 inline-flex items-center gap-3 border-b border-trilot-navy/40 pb-2 text-sm font-medium transition-colors hover:border-trilot-coral hover:text-trilot-coral focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-trilot-coral"
         >
-          View selected builds
+          View selected projects
           <span aria-hidden="true">↗</span>
         </Link>
       </Container>
@@ -102,14 +102,14 @@ export default function ProjectPage() {
     <main className="bg-trilot-paper text-trilot-navy dark:bg-trilot-ink dark:text-trilot-paper">
       <Container className="pb-8 pt-28 sm:pb-10 sm:pt-32 lg:pb-12 lg:pt-36">
         <Link
-          to="/#work"
+          to="/#projects"
           className="group inline-flex items-center gap-2 font-mono text-[0.62rem] uppercase tracking-[0.12em] text-trilot-navy/60 transition-colors hover:text-trilot-coral focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-trilot-coral dark:text-trilot-paper/60"
         >
           <ArrowLeft
             aria-hidden="true"
             className="h-4 w-4 transition-transform duration-300 group-hover:-translate-x-1"
           />
-          Selected builds
+          Selected projects
         </Link>
       </Container>
 

@@ -4,14 +4,14 @@ import { Container } from "../components/Container";
 
 const faqs = [
   {
-    question: "What kind of businesses do you work with?",
+    question: "What kind of businesses do you partner with?",
     answer:
-      "We work with ambitious small businesses, founders, and growing teams that need a clearer, more credible digital presence or a practical digital tool.",
+      "We partner with ambitious small businesses, founders, and growing teams that need a clearer, more credible digital presence or a practical digital tool.",
   },
   {
     question: "How long does a project usually take?",
     answer:
-      "A focused website can take a few weeks, while larger applications and ongoing work depend on scope. We agree the shape, milestones, and next steps before work begins.",
+      "A focused website can take a few weeks, while larger applications and ongoing support depend on scope. We agree the shape, milestones, and next steps before a project begins.",
   },
   {
     question: "Can you improve a website we already have?",
@@ -21,12 +21,12 @@ const faqs = [
   {
     question: "Do you offer ongoing support after launch?",
     answer:
-      "Yes. Support can include maintenance, improvements, content changes, new features, and practical guidance as your business evolves. We will agree the scope and cost before any ongoing work begins.",
+      "Yes. Support can include maintenance, improvements, content changes, new features, and practical guidance as your business evolves. We will agree the scope and cost before any ongoing support begins.",
   },
   {
     question: "Are hosting, maintenance, and other ongoing costs included?",
     answer:
-      "Project pricing covers the agreed work and deliverables. Hosting, domain renewals, paid third-party tools, maintenance, content updates, and new work requested after launch may involve additional fees. We will always discuss and approve those costs with you first.",
+      "Project pricing covers the agreed project and deliverables. Hosting, domain renewals, paid third-party tools, maintenance, content updates, and new projects requested after launch may involve additional fees. We will always discuss and approve those costs with you first.",
   },
   {
     question: "How do we get started?",

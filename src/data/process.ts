@@ -21,7 +21,7 @@ export const processSteps = [
     number: "03",
     title: "Build",
     description:
-      "We design, develop, test, and prepare the work for real use.",
+      "We design, develop, test, and prepare the project for real use.",
   },
   {
     number: "04",

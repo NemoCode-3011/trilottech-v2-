@@ -13,9 +13,6 @@ type ProjectFormData = {
   business: string;
   service: string;
   details: string;
-  budget: string;
-  currency: string;
-  timeline: string;
 };
 
 const initialFormData: ProjectFormData = {
@@ -24,9 +21,6 @@ const initialFormData: ProjectFormData = {
   business: "",
   service: "",
   details: "",
-  budget: "",
-  currency: "NGN",
-  timeline: "",
 };
 
 const WHATSAPP_NUMBER = "2348149798764";
@@ -34,27 +28,6 @@ const CONTACT_EMAIL = "trilottechnologies@gmail.com";
 const EMAILJS_PUBLIC_KEY = "UtDMrfguFimDekRUr";
 const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-
-const budgetOptions = {
-  NGN: [
-    ["starter", "₦150k–₦400k"],
-    ["business", "₦400k–₦1.2m"],
-    ["growth", "₦1.2m–₦2.5m"],
-    ["custom", "₦2.5m+"],
-  ],
-  USD: [
-    ["starter", "$900–$2,500"],
-    ["business", "$2,500–$7,500"],
-    ["growth", "$7,500–$15,000"],
-    ["custom", "$15,000+"],
-  ],
-  GBP: [
-    ["starter", "£700–£2,000"],
-    ["business", "£2,000–£6,000"],
-    ["growth", "£6,000–£12,000"],
-    ["custom", "£12,000+"],
-  ],
-} as const;
 
 export default function StartProject() {
   const reduceMotion = useReducedMotion();
@@ -78,9 +51,6 @@ export default function StartProject() {
       `Email: ${formData.email}`,
       `Business: ${formData.business || "Not provided"}`,
       `Service: ${formData.service}`,
-      `Budget: ${formData.budget || "Not provided"}`,
-      `Currency: ${formData.currency}`,
-      `Timeline: ${formData.timeline || "Not provided"}`,
       "",
       `Project details: ${formData.details}`,
     ].join("\n");
@@ -101,9 +71,6 @@ export default function StartProject() {
             email: formData.email,
             business: formData.business || "Not provided",
             service: formData.service,
-            budget: formData.budget || "Not provided",
-            currency: formData.currency,
-            timeline: formData.timeline || "Not provided",
             details: formData.details,
             message: buildContactMessage(),
             to_email: CONTACT_EMAIL,
@@ -185,34 +152,7 @@ export default function StartProject() {
                     About you
                   </legend>
 
-                  <div className="mt-7 grid gap-6 sm:grid-cols-3">
-                    <div>
-                      <label
-                        htmlFor="currency"
-                        className="block text-sm font-medium"
-                      >
-                        Currency
-                      </label>
-                      <div className="relative mt-3">
-                        <select
-                          id="currency"
-                          name="currency"
-                          value={formData.currency}
-                          onChange={(event) =>
-                            updateField("currency", event.target.value)
-                          }
-                          className="form-select w-full border-b border-trilot-navy/30 bg-transparent px-0 py-3 pr-8 text-base outline-none transition-colors focus:border-trilot-coral dark:border-trilot-paper/30"
-                        >
-                          <option value="NGN">NGN ₦</option>
-                          <option value="USD">USD $</option>
-                          <option value="GBP">GBP £</option>
-                        </select>
-                        <ChevronDown
-                          aria-hidden="true"
-                          className="pointer-events-none absolute right-0 top-1/2 h-4 w-4 -translate-y-1/2 text-trilot-coral"
-                        />
-                      </div>
-                    </div>
+                  <div className="mt-7 grid gap-6 sm:grid-cols-2">
                     <div>
                       <label
                         htmlFor="name"
@@ -295,7 +235,7 @@ export default function StartProject() {
 
                 <fieldset className="px-5 py-7 sm:px-8 sm:py-10">
                   <legend className="font-mono text-[0.6rem] uppercase tracking-[0.12em] text-trilot-navy/45 dark:text-trilot-paper/45">
-                    About the work
+                    About your project
                   </legend>
 
                   <div className="mt-7">
@@ -324,15 +264,20 @@ export default function StartProject() {
                           Choose one
                         </option>
 
-                        <option value="Website">A new website</option>
+                        <option value="Website Design & Development">
+                          Website design & development
+                        </option>
                         <option value="Website redesign">
                           A website redesign
                         </option>
-                        <option value="Web application">
-                          A web application or digital tool
+                        <option value="Web Application Development">
+                          Web application development
                         </option>
-                        <option value="Support">
-                          Ongoing support or improvements
+                        <option value="Website Redesign">
+                          Website redesign
+                        </option>
+                        <option value="Maintenance & Support">
+                          Maintenance & support
                         </option>
                         <option value="Not sure yet">I’m not sure yet</option>
                       </select>
@@ -375,97 +320,6 @@ export default function StartProject() {
                       className="mt-4 w-full resize-y border border-trilot-navy/25 bg-transparent p-4 text-base leading-relaxed outline-none transition-colors placeholder:text-trilot-navy/35 focus:border-trilot-coral dark:border-trilot-paper/25 dark:placeholder:text-trilot-paper/35"
                       placeholder="Tell us about your business, what you need, and anything else that would be helpful."
                     />
-                  </div>
-                </fieldset>
-
-                <fieldset className="px-5 py-7 sm:px-8 sm:py-10">
-                  <legend className="font-mono text-[0.6rem] uppercase tracking-[0.12em] text-trilot-navy/45 dark:text-trilot-paper/45">
-                    Budget and timing
-                  </legend>
-
-                  <p className="mt-3 max-w-xl text-sm leading-relaxed text-trilot-navy/55 dark:text-trilot-paper/55">
-                    These are indicative starting bands to help us understand
-                    the shape of the project. Your final quote depends on scope,
-                    content, integrations, and timeline.
-                  </p>
-
-                  <div className="mt-7 grid gap-6 sm:grid-cols-2">
-                    <div>
-                      <label
-                        htmlFor="budget"
-                        className="block text-sm font-medium"
-                      >
-                        Budget range{" "}
-                        <span className="font-normal text-trilot-navy/45 dark:text-trilot-paper/45">
-                          (optional)
-                        </span>
-                      </label>
-
-                      <div className="relative mt-3">
-                        <select
-                          id="budget"
-                          name="budget"
-                          value={formData.budget}
-                          onChange={(event) =>
-                            updateField("budget", event.target.value)
-                          }
-                          className="form-select w-full border-b border-trilot-navy/30 bg-transparent px-0 py-3 pr-8 text-base outline-none transition-colors focus:border-trilot-coral dark:border-trilot-paper/30"
-                        >
-                          <option value="">Prefer not to say</option>
-                          <option value="">Select a range</option>
-                          {budgetOptions[
-                            formData.currency as keyof typeof budgetOptions
-                          ].map(([value, label]) => (
-                            <option key={value} value={label}>
-                              {label}
-                            </option>
-                          ))}
-                          <option value="Not sure yet">Not sure yet</option>
-                        </select>
-                        <ChevronDown
-                          aria-hidden="true"
-                          className="pointer-events-none absolute right-0 top-1/2 h-4 w-4 -translate-y-1/2 text-trilot-coral"
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label
-                        htmlFor="timeline"
-                        className="block text-sm font-medium"
-                      >
-                        Timeline{" "}
-                        <span className="font-normal text-trilot-navy/45 dark:text-trilot-paper/45">
-                          (optional)
-                        </span>
-                      </label>
-
-                      <div className="relative mt-3">
-                        <select
-                          id="timeline"
-                          name="timeline"
-                          value={formData.timeline}
-                          onChange={(event) =>
-                            updateField("timeline", event.target.value)
-                          }
-                          className="form-select w-full border-b border-trilot-navy/30 bg-transparent px-0 py-3 pr-8 text-base outline-none transition-colors focus:border-trilot-coral dark:border-trilot-paper/30"
-                        >
-                          <option value="">Not sure yet</option>
-                          <option value="As soon as possible">
-                            As soon as possible
-                          </option>
-                          <option value="Within one month">
-                            Within one month
-                          </option>
-                          <option value="In 1–3 months">In 1–3 months</option>
-                          <option value="In 3–6 months">In 3–6 months</option>
-                        </select>
-                        <ChevronDown
-                          aria-hidden="true"
-                          className="pointer-events-none absolute right-0 top-1/2 h-4 w-4 -translate-y-1/2 text-trilot-coral"
-                        />
-                      </div>
-                    </div>
                   </div>
                 </fieldset>
 

@@ -18,7 +18,7 @@ export default function TermsPage() {
             TERMS
           </p>
           <h1 className="mt-6 font-display text-6xl font-semibold leading-[0.86] tracking-[-0.08em] sm:text-8xl">
-            Clear expectations make better work.
+            Clear expectations make better projects.
           </h1>
           <p className="mt-8 text-base leading-relaxed text-(--color-on-surface)/65 sm:text-lg">
             These terms describe the general basis for working with Trilot. Each
@@ -31,14 +31,14 @@ export default function TermsPage() {
                 Scope and approval
               </h2>
               <p className="mt-3">
-                Work begins after the scope, deliverables, payment schedule, and
-                responsibilities have been agreed. Requests outside the agreed
-                scope may require a revised estimate.
+                A project begins after the scope, deliverables, payment
+                schedule, and responsibilities have been agreed. Requests
+                outside the agreed scope may require a revised estimate.
               </p>
             </section>
             <section>
               <h2 className="font-display text-3xl font-semibold text-(--color-on-surface)">
-                Fees and additional work
+                Fees and additional projects
               </h2>
               <p className="mt-3">
                 Project fees cover the agreed deliverables. Hosting, domains,
@@ -51,7 +51,7 @@ export default function TermsPage() {
                 Launch and third parties
               </h2>
               <p className="mt-3">
-                We aim to deliver carefully tested work, but third-party
+                We aim to deliver carefully tested projects, but third-party
                 services, hosting providers, platforms, and client-supplied
                 content may affect performance or availability.
               </p>

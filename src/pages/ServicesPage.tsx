@@ -23,11 +23,11 @@ export default function ServicesPage() {
             SERVICES
           </p>
           <h1 className="mt-6 max-w-[10ch] font-display text-6xl font-semibold leading-[0.84] tracking-[-0.08em] sm:text-8xl lg:text-9xl">
-            Digital work with a reason to exist.
+            Digital projects with a reason to exist.
           </h1>
           <p className="mt-8 max-w-xl text-base leading-relaxed text-(--color-on-surface)/65 sm:text-lg">
             We help ambitious businesses become easier to understand, easier to
-            trust, and easier to choose through thoughtful digital work.
+            trust, and easier to choose through thoughtful digital projects.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link

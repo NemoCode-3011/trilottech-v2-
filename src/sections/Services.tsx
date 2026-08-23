@@ -171,7 +171,7 @@ export default function Services() {
                 id="services-heading"
                 className="mt-5 max-w-[9ch] wrap-break-word font-display text-[clamp(2.75rem,11vw,4.25rem)] font-semibold leading-[0.86] tracking-[-0.08em] sm:text-6xl xl:text-7xl"
               >
-                Digital work that moves things forward.
+                Digital projects that move things forward.
               </h2>
 
               <p className="mt-6 max-w-sm text-base leading-relaxed text-(--color-on-surface)/60 sm:text-lg">

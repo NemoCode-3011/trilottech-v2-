@@ -46,7 +46,7 @@ export default function About() {
             <p className="mt-7 text-base leading-relaxed text-(--color-on-surface)/65 sm:text-lg">
               We combine strategy, design, and development to create websites
               and digital products that make businesses easier to understand,
-              trust, and choose. The work is collaborative, practical, and
+              trust, and choose. The project is collaborative, practical, and
               shaped around the people your business needs to reach.
             </p>
 
@@ -71,7 +71,7 @@ export default function About() {
               to="/about"
               className="group mt-10 inline-flex items-center gap-3 border-b border-trilot-coral pb-2 text-sm font-medium transition-colors hover:text-trilot-coral focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-trilot-coral"
             >
-              More about how we work
+              More about our process
               <ArrowUpRight
                 aria-hidden="true"
                 size={17}

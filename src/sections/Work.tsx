@@ -170,8 +170,8 @@ export default function Work() {
 
   return (
     <section
-      id="work"
-      aria-labelledby="work-heading"
+      id="projects"
+      aria-labelledby="projects-heading"
       className="scroll-mt-28 bg-trilot-paper text-trilot-navy dark:bg-trilot-ink dark:text-trilot-paper"
     >
       <Container className="py-24 sm:py-32 lg:py-40">
@@ -182,7 +182,7 @@ export default function Work() {
             </p>
 
             <h2
-              id="work-heading"
+              id="projects-heading"
               className="mt-6 max-w-[9ch] font-display text-6xl font-semibold leading-[0.86] tracking-[-0.08em] sm:text-7xl lg:text-8xl"
             >
               Websites built for real businesses.

@@ -5,8 +5,8 @@ const navigation = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/#services" },
-  { label: "How we work", href: "/#process" },
-  { label: "Selected builds", href: "/#work" },
+  { label: "Our process", href: "/#process" },
+  { label: "Selected projects", href: "/#projects" },
 ] as const;
 
 const services = [
@@ -22,7 +22,7 @@ export default function Footer() {
   return (
     <footer className="bg-trilot-paper text-[#0b1e30] dark:bg-[#0b1e30] dark:text-trilot-paper">
       <Container className="py-12 sm:py-16 lg:py-20">
-        <div className="flex items-start justify-between gap-6 border-b border-trilot-paper/15 pb-10 sm:pb-12">
+        <div className="flex items-start justify-between gap-6 border-b border-current/15 pb-10 sm:pb-12">
           <Link
             to="/"
             aria-label="Trilot home"
@@ -31,7 +31,7 @@ export default function Footer() {
             TRILOT
           </Link>
 
-          <span className="pt-1 font-mono text-[0.58rem] uppercase tracking-[0.12em] text-trilot-paper/55">
+          <span className="pt-1 font-mono text-[0.58rem] uppercase tracking-[0.12em] text-current/55">
             © {year}
           </span>
         </div>
@@ -39,7 +39,7 @@ export default function Footer() {
         <div className="grid gap-12 py-12 sm:grid-cols-2 sm:gap-10 lg:grid-cols-[1.25fr_0.75fr_0.75fr_1fr] lg:py-16">
           <div className="max-w-sm">
             <p className="font-display text-2xl font-semibold leading-[0.95] tracking-[-0.06em] text-current sm:text-3xl">
-              Digital work for businesses moving forward.
+              Digital projects for businesses moving forward.
             </p>
 
             <a
@@ -125,7 +125,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4 border-t border-trilot-paper/15 pt-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-4 border-t border-current/15 pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-mono text-[0.56rem] uppercase tracking-widest text-current/45">
             © {year} Trilot. All rights reserved.
           </p>

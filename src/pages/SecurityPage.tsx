@@ -31,9 +31,9 @@ export default function SecurityPage() {
                 Access
               </h2>
               <p className="mt-3">
-                Access is shared only when needed for the agreed work. Clients
-                should use strong, unique passwords and enable multi-factor
-                authentication where available.
+                Access is shared only when needed for the agreed project.
+                Clients should use strong, unique passwords and enable
+                multi-factor authentication where available.
               </p>
             </section>
             <section>

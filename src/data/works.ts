@@ -37,7 +37,7 @@ export const workItems = [
     name: "Knost & Co",
     category: "Construction",
     description:
-      "A grounded website concept built around trust, capability, and the quality of the work.",
+      "A grounded website concept built around trust, capability, and the quality of the project.",
     caseStudyHref: "/work/knost-and-co",
     liveHref: "https://knost-and-co.vercel.app/",
     githubHref: "https://github.com/NemoCode-3011/knost-and-co",

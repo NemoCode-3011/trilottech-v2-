@@ -2,7 +2,7 @@ export const services = [
   {
     number: "01",
     title: "Website Design & Development",
-    headline: "Make the first impression work harder.",
+    headline: "Make the first impression do more.",
     description:
       "Distinctive, useful websites for businesses that need to be understood quickly and remembered clearly.",
     details: ["Landing pages", "Business sites", "E-commerce"],
@@ -17,7 +17,7 @@ export const services = [
   {
     number: "02",
     title: "Web Application Development",
-    headline: "Make complex work feel simple.",
+    headline: "Make complex processes feel simple.",
     description:
       "Purpose-built digital tools for the workflows, systems, and customer experiences behind the business.",
     details: [
@@ -28,7 +28,7 @@ export const services = [
     ],
     outcomes: [
       "A simpler workflow for your team or customers",
-      "Interfaces shaped around how the work really happens",
+      "Interfaces shaped around how the process really happens",
       "A flexible foundation for future features",
     ],
     href: "/services",

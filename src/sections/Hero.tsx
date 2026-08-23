@@ -212,7 +212,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Quiet scroll cue — invites visitors past the fold toward Process
-            and Work instead of stopping here. Fades in last. */}
+            and Projects instead of stopping here. Fades in last. */}
         <motion.div
           variants={item}
           initial="hidden"

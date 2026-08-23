@@ -16,7 +16,7 @@ export default function Process() {
         <div className="grid gap-16 xl:grid-cols-[0.68fr_1.32fr] xl:gap-24">
           <div className="xl:sticky xl:top-32 xl:h-fit">
             <p className="font-mono text-[0.65rem] tracking-[0.14em] text-trilot-coral">
-              HOW WE WORK
+              OUR PROCESS
             </p>
 
             <h2
@@ -28,7 +28,7 @@ export default function Process() {
 
             <p className="mt-8 max-w-sm text-base leading-relaxed text-trilot-navy/60 dark:text-trilot-paper/60 sm:text-lg">
               A straightforward process for turning unclear problems into useful
-              digital work.
+              digital projects.
             </p>
 
             <div className="mt-12 hidden items-center gap-4 xl:flex">
