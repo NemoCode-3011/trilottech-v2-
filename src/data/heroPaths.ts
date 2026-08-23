@@ -19,7 +19,7 @@ export const heroPaths = [
     description: "A website that no longer reflects your quality.",
     headline: "Make your website match",
     highlightedHeadline: "the quality of your business.",
-    body: "An outdated site quietly costs you trust — and enquiries. We build ones that earn both back.",
+    body: "Upgrade your site, Upgrade your business. Start with a website that works as hard as you do!",
     cta: "Improve my website",
   },
   {
@@ -29,7 +29,7 @@ export const heroPaths = [
     description: "A promising idea that needs a clear direction.",
     headline: "Turn your product idea into",
     highlightedHeadline: "something people can use.",
-    body: "From idea to a first version people can actually use — shaped, designed, and built with you.",
+    body: "From idea to a first version people can actually use. Shaped, designed, and built with you.",
     cta: "Discuss my idea",
   },
   {
