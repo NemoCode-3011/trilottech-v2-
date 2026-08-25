@@ -47,7 +47,7 @@ export default function ContactCta() {
                 id="contact-heading"
                 className="mt-6 max-w-[9ch] font-display text-6xl font-semibold leading-[0.86] tracking-[-0.08em] sm:text-7xl xl:text-8xl"
               >
-                Have a digital project in mind?
+                Have a project in mind?
               </h2>
             </div>
 
