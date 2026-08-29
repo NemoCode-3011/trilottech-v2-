@@ -246,7 +246,6 @@ function AppContent() {
                 </LegalPageLayout>
               }
             />
-
             <Route
               path="/security"
               element={
@@ -255,7 +254,6 @@ function AppContent() {
                 </LegalPageLayout>
               }
             />
-
             <Route path="/work/:slug" element={<ProjectPageLayout />} />
           </Routes>
         </div>

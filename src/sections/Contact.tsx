@@ -1,6 +1,7 @@
 import { motion, useReducedMotion } from "motion/react";
 import { Link } from "react-router-dom";
-import { Mail, MessageCircle } from "lucide-react";
+import { Mail} from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa6";
 import { Container } from "../components/Container";
 import { easeOut } from "../lib/motion";
 
@@ -77,7 +78,7 @@ export default function ContactCta() {
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-full bg-trilot-coral px-4 py-2.5 text-sm font-medium text-trilot-navy transition-colors hover:bg-trilot-coral-strong hover:text-trilot-paper focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-trilot-coral"
                 >
-                  <MessageCircle size={16} aria-hidden="true" />
+                  <FaWhatsapp size={16} aria-hidden="true" />
                   WhatsApp
                 </a>
                 <a

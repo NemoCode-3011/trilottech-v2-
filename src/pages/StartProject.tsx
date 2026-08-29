@@ -151,7 +151,6 @@ export default function StartProject() {
                   <legend className="font-mono text-[0.6rem] uppercase tracking-[0.12em] text-trilot-navy/45 dark:text-trilot-paper/45">
                     About you
                   </legend>
-
                   <div className="mt-7 grid gap-6 sm:grid-cols-2">
                     <div>
                       <label
@@ -267,11 +266,11 @@ export default function StartProject() {
                         <option value="Website Design & Development">
                           Website design & development
                         </option>
-                        <option value="Website redesign">
-                          A website redesign
-                        </option>
                         <option value="Web Application Development">
                           Web application development
+                        </option>
+                        <option value="E-commerce Website">
+                          E-commerce Website
                         </option>
                         <option value="Website Redesign">
                           Website redesign
