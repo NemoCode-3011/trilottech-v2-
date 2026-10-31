@@ -1,16 +1,15 @@
 import type { ReactNode } from "react";
-
-type ContainerProps = {
-  children: ReactNode;
-  className?: string;
-};
+import { cn } from "../lib/cn";
 
 export function Container({
+  className,
   children,
-  className = "",
-}: ContainerProps) {
+}: {
+  className?: string;
+  children: ReactNode;
+}) {
   return (
-    <div className={`container-trilot ${className}`}>
+    <div className={cn("mx-auto w-full max-w-7xl px-5 sm:px-8", className)}>
       {children}
     </div>
   );

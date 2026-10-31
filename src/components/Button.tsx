@@ -1,70 +1,62 @@
-import type { AnchorHTMLAttributes, ReactNode } from "react";
+import type { ButtonHTMLAttributes, ReactNode } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "motion/react";
+import { cn } from "../lib/cn";
 
-const MotionLink = motion(Link);
-
-type ButtonProps = Omit<
-  AnchorHTMLAttributes<HTMLAnchorElement>,
-  | "onDrag"
-  | "onDragStart"
-  | "onDragEnd"
-  | "onDragEnter"
-  | "onDragLeave"
-  | "onDragOver"
-  | "onDrop"
-  | "onAnimationStart"
-  | "onAnimationEnd"
-  | "onAnimationIteration"
-> & {
+type Props = {
+  // Expanded to include the new visual styles needed for the dark and light section layout rhythms
+  variant?: "primary" | "secondary" | "dark" | "outlineDark";
+  to?: string;
+  href?: string;
+  className?: string;
   children: ReactNode;
-  variant?: "primary" | "secondary" | "coral";
+} & Omit<ButtonHTMLAttributes<HTMLButtonElement>, "className" | "children">;
+
+const base =
+  "inline-flex items-center justify-center gap-2 rounded-base px-5 py-3 text-sm font-semibold transition-colors duration-200";
+
+const variants = {
+  primary: "bg-blue text-white hover:bg-[#0058c7]",
+  secondary: "border border-white/20 text-white hover:bg-white/10",
+  // New solid dark variant for the light-background Work cards
+  dark: "bg-[#051329] text-white hover:bg-blue",
+  // New minimal border-style dark variant for secondary actions on light layouts
+  outlineDark: "border border-[#051329]/20 text-[#051329] hover:bg-[#051329] hover:text-white px-4 py-2 text-xs",
 };
 
 export function Button({
-  children,
   variant = "primary",
-  className = "",
-  ...props
-}: ButtonProps) {
-  const baseStyles =
-    "inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-bold leading-none transition-colors duration-200";
+  to,
+  href,
+  className,
+  children,
+  ...rest
+}: Props) {
+  const classes = cn(base, variants[variant], className);
 
-  const variantStyles =
-    variant === "primary"
-      ? "bg-trilot-blue text-trilot-paper hover:bg-trilot-navy"
-      : variant === "coral"
-        ? "bg-trilot-coral-strong text-trilot-paper hover:bg-trilot-navy"
-        : "border border-trilot-navy/20 bg-transparent text-trilot-navy hover:bg-trilot-navy hover:text-trilot-paper dark:border-trilot-paper/25 dark:text-trilot-paper dark:hover:bg-trilot-paper dark:hover:text-trilot-navy";
-
-  const buttonClassName = `${baseStyles} ${variantStyles} ${className}`;
-  const { href, ...linkProps } = props;
-
-  if (href?.startsWith("/")) {
+  if (to) {
     return (
-      <MotionLink
-        to={href}
-        className={buttonClassName}
-        whileHover={{ y: -3 }}
-        whileTap={{ scale: 0.97 }}
-        transition={{ duration: 0.18 }}
-        {...linkProps}
+      <Link to={to} className={classes}>
+        {children}
+      </Link>
+    );
+  }
+
+  if (href) {
+    const external = href.startsWith("http");
+    return (
+      <a
+        href={href}
+        className={classes}
+        {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       >
         {children}
-      </MotionLink>
+      </a>
     );
   }
 
   return (
-    <motion.a
-      className={buttonClassName}
-      whileHover={{ y: -3 }}
-      whileTap={{ scale: 0.97 }}
-      transition={{ duration: 0.18 }}
-      href={href}
-      {...linkProps}
-    >
+    <button className={classes} {...rest}>
       {children}
-    </motion.a>
+    </button>
   );
 }

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://trilottechnologies.vercel.app/sitemap.xml
