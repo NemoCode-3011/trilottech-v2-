@@ -3,6 +3,7 @@ import { Container } from "./Container";
 import { Logo } from "./Logo";
 import { navLinks, site, whatsappLink } from "../data/site";
 import { MapPin } from "lucide-react";
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6";
 
 const exploreLinks = [...navLinks, { label: "FAQ", href: "/#faq" }];
 
@@ -62,6 +63,42 @@ export function Footer() {
             <li>
               <a href={`mailto:${site.email}`} className={linkClass}>
                 {site.email}
+              </a>
+            </li>
+            <li>
+              <a
+                href={site.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${linkClass} inline-flex items-center gap-2`}
+              >
+                <FaInstagram size={16} aria-hidden="true" focusable="false" />
+                Instagram
+                <span className="sr-only"> (opens in a new tab)</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={site.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${linkClass} inline-flex items-center gap-2`}
+              >
+                <FaTiktok size={16} aria-hidden="true" focusable="false" />
+                TikTok
+                <span className="sr-only"> (opens in a new tab)</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={site.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${linkClass} inline-flex items-center gap-2`}
+              >
+                <FaFacebook size={16} aria-hidden="true" focusable="false" />
+                Facebook
+                <span className="sr-only"> (opens in a new tab)</span>
               </a>
             </li>
           </ul>

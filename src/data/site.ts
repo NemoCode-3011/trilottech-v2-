@@ -5,6 +5,9 @@ export const site = {
   whatsapp: "2349043283132",
   location: "Nigeria",
   url: "https://trilottechnologies.vercel.app/",
+  instagram: "https://www.instagram.com/trilottechnologies_?psln=MW5vdmN1N3BzYXNiOA==",
+  tiktok: "https://www.tiktok.com/@trilottechnologies_?_r=1&_t=ZS-9B2dV7vAzEQ",
+  facebook: "https://www.facebook.com/share/19sNBrH547/"
 };
 
 export const organizationSchema = {
