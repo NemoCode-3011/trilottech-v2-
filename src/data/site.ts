@@ -3,7 +3,7 @@ export const site = {
   shortName: "Trilot",
   email: "trilottechnologies@gmail.com",
   whatsapp: "2349043283132",
-  location: "Ibadan, Nigeria",
+  location: "Nigeria",
   url: "https://trilottechnologies.vercel.app/",
 };
 
