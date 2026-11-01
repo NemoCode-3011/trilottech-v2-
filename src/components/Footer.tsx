@@ -55,7 +55,7 @@ export function Footer() {
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={linkClass}
+                className={`${linkClass} inline-flex items-center gap-2`}
               >
                 <FaWhatsapp size={16} aria-hidden="true" focusable="false" />
                 WhatsApp chat
@@ -63,7 +63,10 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <a href={`mailto:${site.email}`} className={linkClass}>
+              <a
+                href={`mailto:${site.email}`}
+                className={`${linkClass} inline-flex items-center gap-2`}
+              >
                 <IoMailOutline size={16} aria-hidden="true" focusable="false" />
                 {site.email}
               </a>
