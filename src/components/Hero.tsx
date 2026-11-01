@@ -74,7 +74,7 @@ export function Hero() {
             {hero.footnote}
           </p>
           <p className="mt-3 text-sm text-slate">
-            This site on Google PageSpeed (mobile): 98 performance, 100
+            This site on Google PageSpeed (mobile): 99 performance, 100
             accessibility, 100 best practices, 100 SEO.{" "}
             <a
               href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Ftrilottechnologies.vercel.app%2F"
