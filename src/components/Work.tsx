@@ -61,7 +61,7 @@ export function Work() {
               width={1200}
               height={514}
               loading="lazy"
-              className="aspect-video h-auto w-full rounded-base border border-ink/10 bg-paper object-cover object-top md:aspect-[21/9]"
+              className="aspect-video h-auto w-full rounded-base border border-ink/10 bg-paper object-cover object-top md:aspect-21/9"
             />
 
             <div className="mt-8 grid gap-8 lg:grid-cols-12 lg:gap-10">
@@ -105,7 +105,7 @@ export function Work() {
                 width={800}
                 height={500}
                 loading="lazy"
-                className="aspect-[16/10] h-auto w-full rounded-base border border-ink/10 bg-paper object-cover object-top"
+                className="aspect-16/10 h-auto w-full rounded-base border border-ink/10 bg-paper object-cover object-top"
               />
 
               <div className="mt-6 flex flex-wrap items-center gap-3">

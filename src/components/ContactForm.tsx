@@ -6,7 +6,6 @@ import {
   type FormEvent,
 } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import emailjs from "@emailjs/browser";
 import { Check, MessageCircle } from "lucide-react";
 import { z } from "zod";
 import { Button } from "./Button";
@@ -381,7 +380,7 @@ export function ContactForm() {
       {/* Honeypot: hidden from people, visible to bots */}
       <div
         aria-hidden="true"
-        className="absolute -left-[9999px] h-0 w-0 overflow-hidden"
+        className="absolute left-[-9999px] h-0 w-0 overflow-hidden"
       >
         <label>
           Leave this field empty
