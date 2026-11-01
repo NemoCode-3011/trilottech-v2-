@@ -21,7 +21,7 @@ function LiveLink({
   return (
     <Button href={project.liveUrl} variant={variant} className="px-5 py-3">
       View live site
-      <span className="sr-only">: {project.name}, opens in a new tab</span>
+      <span className="sr-only">: {project.name}</span>
       <ArrowUpRight size={16} aria-hidden="true" />
     </Button>
   );

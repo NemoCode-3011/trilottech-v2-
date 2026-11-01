@@ -283,6 +283,7 @@ export function ContactForm() {
 
   return (
     <form onSubmit={onSubmit} noValidate className="space-y-8">
+      <p className="text-sm text-slate">All fields are required.</p>
       <Field id="name" label="Your name or company name" error={errors.name}>
         <input
           id="name"
@@ -292,6 +293,7 @@ export function ContactForm() {
           onChange={onText("name")}
           aria-invalid={!!errors.name}
           aria-describedby={describe("name", false, errors.name)}
+          autoComplete="name"
           className={cn(
             inputBase,
             errors.name ? "border-danger" : "border-white/20",

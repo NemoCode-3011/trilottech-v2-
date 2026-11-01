@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Container } from "./Container";
@@ -10,6 +10,8 @@ import { cn } from "../lib/cn";
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const firstLinkRef = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -20,14 +22,23 @@ export function Navbar() {
 
   useEffect(() => {
     if (!open) return;
+
+    const behind = document.querySelectorAll("main, footer");
+    behind.forEach((el) => el.setAttribute("inert", ""));
+    document.body.style.overflow = "hidden";
+    firstLinkRef.current?.focus();
+
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setOpen(false);
     };
-    document.body.style.overflow = "hidden";
     window.addEventListener("keydown", onKey);
+
+    const button = menuButtonRef.current;
     return () => {
+      behind.forEach((el) => el.removeAttribute("inert"));
       document.body.style.overflow = "";
       window.removeEventListener("keydown", onKey);
+      button?.focus();
     };
   }, [open]);
 
@@ -84,6 +95,8 @@ export function Navbar() {
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
             aria-controls="mobile-menu"
+            ref={menuButtonRef}
+
             onClick={() => setOpen((o) => !o)}
           >
             {open ? <X size={22} /> : <Menu size={22} />}
@@ -97,10 +110,11 @@ export function Navbar() {
           >
             <Container className="flex flex-col gap-2 py-8">
               <nav aria-label="Mobile" className="flex flex-col">
-                {navLinks.map((link) => (
+                {navLinks.map((link, index) => (
                   <Link
                     key={link.href}
                     to={link.href}
+                    ref={index === 0 ? firstLinkRef : undefined}
                     onClick={() => setOpen(false)}
                     className="border-b border-white/10 py-4 font-display text-2xl font-semibold"
                   >
@@ -109,10 +123,7 @@ export function Navbar() {
                 ))}
               </nav>
 
-              <Button
-                to="/start-project"
-                className="mt-8 w-full py-4"
-              >
+              <Button to="/start-project" className="mt-8 w-full py-4">
                 Start a project
               </Button>
 

@@ -55,7 +55,6 @@ export const legal: Record<"privacy" | "terms", LegalDoc> = {
           "EmailJS: delivers your quote request to our email inbox.",
           "Google (Gmail): where we receive and store those emails.",
           "Vercel: hosts this website and may keep technical logs.",
-          "Google Fonts: when you open the site, your browser requests fonts from Google, which means your IP address is shared with Google.",
           "WhatsApp (Meta): if you choose to message us on WhatsApp, your conversation is handled under WhatsApp’s own privacy policy.",
         ],
       },

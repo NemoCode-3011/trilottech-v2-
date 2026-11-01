@@ -6,7 +6,6 @@ import { Navbar } from "./components/Navbar";
 import Home from "./pages/Home";
 import Legal from "./pages/Legal";
 import NotFound from "./pages/NotFound";
-import StartProject from "./pages/StartProject";
 
 function ScrollToHash() {
   const { pathname, hash } = useLocation();
@@ -39,7 +38,7 @@ export const routes: RouteRecord[] = [
     element: <Layout />,
     children: [
       { index: true, element: <Home /> },
-      { path: "start-project", element: <StartProject /> },
+      { path: "start-project", lazy: () => import("./pages/StartProject") },
       { path: "privacy", element: <Legal doc="privacy" /> },
       { path: "terms", element: <Legal doc="terms" /> },
       { path: "404", element: <NotFound /> },

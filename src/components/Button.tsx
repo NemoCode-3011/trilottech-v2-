@@ -20,7 +20,8 @@ const variants = {
   // New solid dark variant for the light-background Work cards
   dark: "bg-[#051329] text-white hover:bg-blue",
   // New minimal border-style dark variant for secondary actions on light layouts
-  outlineDark: "border border-[#051329]/20 text-[#051329] hover:bg-[#051329] hover:text-white px-4 py-2 text-xs",
+  outlineDark:
+    "border border-[#051329]/20 text-[#051329] hover:bg-[#051329] hover:text-white px-4 py-2 text-xs",
 };
 
 export function Button({
@@ -50,6 +51,7 @@ export function Button({
         {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       >
         {children}
+        {external && <span className="sr-only"> (opens in a new tab)</span>}
       </a>
     );
   }

@@ -12,8 +12,8 @@
   --color-paper: #f3f6fa;
   --color-danger: #ff8f8f;
 
-  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
-  --font-body: "Manrope", system-ui, sans-serif;
+  --font-display: "Bricolage Grotesque Variable", system-ui, sans-serif;
+  --font-body: "Manrope Variable", system-ui, sans-serif;
 
   --radius-base: 0.5rem;
 }

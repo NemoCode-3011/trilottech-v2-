@@ -16,7 +16,7 @@ export function Faq() {
           id="faq-heading"
           className="mt-4 max-w-3xl text-4xl font-semibold md:text-5xl"
         >
-          Common questions, direct answers
+          Frequently Asked Questions
           <span className="text-blue">.</span>
         </h2>
 

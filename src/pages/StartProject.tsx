@@ -70,3 +70,4 @@ export default function StartProject() {
     </main>
   );
 }
+export const Component = StartProject;

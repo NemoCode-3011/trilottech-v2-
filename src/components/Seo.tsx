@@ -14,7 +14,7 @@ export function Seo({
   title,
   description,
   path = "/",
-  image = "/og/home.png",
+  image = "/og/home.jpg",
   noindex = false,
   jsonLd,
 }: SeoProps) {

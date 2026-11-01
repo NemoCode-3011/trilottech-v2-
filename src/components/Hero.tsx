@@ -23,7 +23,9 @@ export function Hero() {
     >
       {/* Background image */}
       <img
-        src="/assets/hero3.png"
+        src="/assets/hero3.webp"
+        srcSet="/assets/hero-800.webp 800w, /assets/hero3.webp 1672w"
+        sizes="100vw"
         alt=""
         width={1672}
         height={941}
