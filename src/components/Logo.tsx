@@ -13,10 +13,12 @@ export function LogoMark({ className }: { className?: string }) {
 
 export function Logo() {
   return (
-    <span className="inline-flex items-center gap-2.5">
-      <LogoMark className="h-6 w-auto text-blue" />
+    <span className="flex flex-col leading-none">
       <span className="font-display text-xl font-semibold tracking-tight">
         Trilot<span className="text-green">.</span>
+      </span>
+      <span className="mt-1 text-[0.6875rem] font-semibold tracking-[0.25em] text-slate">
+        TECHNOLOGIES
       </span>
     </span>
   );

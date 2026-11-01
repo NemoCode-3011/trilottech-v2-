@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <main id="main" className="bg-ink pb-24 pt-32 md:pb-32 md:pt-48">
       <Seo
-        title="Page not found | Trilot"
+        title="Page not found"
         description="This page doesn’t exist."
         path="/404"
         noindex

@@ -14,7 +14,7 @@ export default function StartProject() {
   return (
     <main id="main" className="bg-ink pb-24 pt-32 md:pb-32 md:pt-40">
       <Seo
-        title="Get a quote | Trilot"
+        title="Get a quote"
         description="Tell us what you want to build. We reply within 24 hours and send a fixed-price proposal once the scope is clear."
         path="/start-project"
       />

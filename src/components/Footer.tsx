@@ -15,7 +15,7 @@ export function Footer() {
     <footer className="border-t border-white/10 bg-ink">
       <Container className="grid gap-12 py-14 md:grid-cols-12 md:py-16">
         <div className="md:col-span-5">
-          <Link to="/" aria-label="Trilot home">
+          <Link to="/" aria-label="Trilot Technologies home">
             <Logo />
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate">
@@ -71,8 +71,8 @@ export function Footer() {
       <div className="border-t border-white/10">
         <Container className="flex flex-col gap-3 py-6 text-sm text-slate sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © <span suppressHydrationWarning>{year}</span> Trilot. All rights
-            reserved.
+            © <span suppressHydrationWarning>{year}</span> Trilot Technologies.
+            All rights reserved.
           </p>
           <ul className="flex gap-6">
             <li>

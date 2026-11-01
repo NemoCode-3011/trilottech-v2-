@@ -23,7 +23,7 @@ export const legal: Record<"privacy" | "terms", LegalDoc> = {
       {
         heading: "Who we are",
         paragraphs: [
-          `Trilot (“we”, “us”) is a web design and development studio based in Nigeria. You can reach us at ${site.email}.`,
+          `Trilot Technologies (“Trilot”, “we”, “us”) is a web design and development studio based in Nigeria. You can reach us at ${site.email}.`,
         ],
       },
       {
@@ -33,9 +33,7 @@ export const legal: Record<"privacy" | "terms", LegalDoc> = {
           "Messages you send us by email or WhatsApp.",
           "Basic technical information that our hosting provider may log when you visit, such as your IP address, browser type and the pages requested.",
         ],
-        paragraphs: [
-          "We do not collect payment details through this website.",
-        ],
+        paragraphs: ["We do not collect payment details through this website."],
       },
       {
         heading: "Why we use it",
@@ -123,7 +121,7 @@ export const legal: Record<"privacy" | "terms", LegalDoc> = {
     title: "Terms of Use",
     updated: "31 October 2026",
     intro:
-      "These terms cover your use of this website. Work we do for you is covered by the written proposal we agree with you, which takes priority for that project.",
+      "These terms cover your use of this website, which is operated by Trilot Technologies (“Trilot”, “we”, “us”). Work we do for you is covered by the written proposal we agree with you, which takes priority for that project.",
     sections: [
       {
         heading: "Using this website",

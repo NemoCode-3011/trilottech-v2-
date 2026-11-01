@@ -1,5 +1,6 @@
 export const site = {
-  name: "Trilot",
+  name: "Trilot Technologies",
+  shortName: "Trilot",
   email: "trilottechnologies@gmail.com",
   whatsapp: "2349043283132",
   location: "Ibadan, Nigeria",
@@ -10,6 +11,7 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: site.name,
+  alternateName: site.shortName,
   url: site.url,
   logo: `${site.url}/trilot.png`,
   description:

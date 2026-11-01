@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main id="main">
       <Seo
-        title="Trilot | Custom websites and web systems"
+        title="Trilot Technologies| Custom websites and web systems"
         description="Trilot designs and hand-codes fast, custom websites and web systems for businesses in Nigeria and beyond. Ask for a clear, fixed-price quote."
         path="/"
         jsonLd={organizationSchema}

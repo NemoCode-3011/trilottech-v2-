@@ -19,7 +19,7 @@ export default function Legal({ doc }: { doc: "privacy" | "terms" }) {
   return (
     <main id="main" className="bg-ink pb-24 pt-32 md:pb-32 md:pt-40">
       <Seo
-        title={`${content.title} | Trilot`}
+        title={`${content.title}`}
         description={
           doc === "privacy"
             ? "How Trilot collects, uses and protects the information you share through this website."
