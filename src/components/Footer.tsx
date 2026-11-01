@@ -3,7 +3,8 @@ import { Container } from "./Container";
 import { Logo } from "./Logo";
 import { navLinks, site, whatsappLink } from "../data/site";
 import { MapPin } from "lucide-react";
-import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa6";
+import { IoMailOutline } from "react-icons/io5";
 
 const exploreLinks = [...navLinks, { label: "FAQ", href: "/#faq" }];
 
@@ -56,12 +57,14 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className={linkClass}
               >
+                <FaWhatsapp size={16} aria-hidden="true" focusable="false" />
                 WhatsApp chat
                 <span className="sr-only"> (opens in a new tab)</span>
               </a>
             </li>
             <li>
               <a href={`mailto:${site.email}`} className={linkClass}>
+                <IoMailOutline size={16} aria-hidden="true" focusable="false" />
                 {site.email}
               </a>
             </li>
